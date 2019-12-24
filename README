@@ -1,0 +1,21 @@
+发布使用说明:
+
+1. 在MyEclipse中点击项目节点->build->war.compress.js.css.xml文件中右键run as ant build;
+
+2. 在MySQL中创建数据库相应的数据库(数据库名称是dec****.sql文件的名称),并将数据导入到数据库中;
+
+3. 使用压缩文件打开WAR包修改配置文件中的数据库登录用户名与密码(具体形式请咨询相关人员);
+
+4. 将jetty服务器关闭(直接关闭dos控制台即可,如果是启动的服务,先关闭服务即可),将dec.war拷贝到webapps文件夹目录下;
+
+5. 使用java -jar start.jar启动服务器,或者直接双击start.bat启动亦可;
+
+注意事项：
+     1) 经测试，由于MyEclipse 2014 Java版本库的问题，不能使用其打包，否则将导致Jetty或Tomcat服务无法启动；
+     2) 服务容器可以使用Jetty或者Tomcat，全请注意兼容版本；
+     3) 打包前请调整好配置参数，比如是否开启监控、是否开启跟踪等；
+     
+     
+    												星夜回缘(bluefuxianwu at gmail dot com)
+    												
+    											       2014-05-13-07-51-53
