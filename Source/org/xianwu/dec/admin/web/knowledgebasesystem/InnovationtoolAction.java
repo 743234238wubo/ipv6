@@ -1,0 +1,33 @@
+package org.xianwu.dec.admin.web.knowledgebasesystem;
+
+import java.util.List;
+
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+
+import org.xianwu.core.json.JsonHelper;
+import org.xianwu.core.metatype.Dto;
+import org.xianwu.core.metatype.impl.BaseDto;
+import org.xianwu.core.mvc.xstruts.action.ActionForm;
+import org.xianwu.core.mvc.xstruts.action.ActionForward;
+import org.xianwu.core.mvc.xstruts.action.ActionMapping;
+import org.xianwu.core.util.Utils;
+import org.xianwu.core.web.BizAction;
+import org.xianwu.core.web.CommonActionForm;
+import org.xianwu.core.web.util.WebUtils;
+
+/**
+ * 知识库材料
+ * 
+ * @author XianwuFu
+ * @since 2013-01-01
+ * @see BizAction
+ */
+public class InnovationtoolAction extends BizAction {
+
+	public ActionForward init(ActionMapping mapping, ActionForm form, HttpServletRequest request, HttpServletResponse response) throws Exception {
+		return mapping.findForward("InnovationtoolView");
+	}
+
+	
+}
